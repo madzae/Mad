@@ -1,8 +1,22 @@
-<widget xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" id="com.phonegap.madmanid" version="1.0.0">
-  <name>Madman</name>
-  <description>Madman - Entertainment portal</description>
-  <author href="http://madman.id email="mad@madman.id">Madman Team</author>
-  <content src="index.html"/>
+<?xml version="1.0" encoding="UTF-8" ?>
+    <widget xmlns   = "http://www.w3.org/ns/widgets"
+        xmlns:gap   = "http://phonegap.com/ns/1.0"
+        id          = "com.phonegap.madman"
+        versionCode = "10" 
+        version     = "1.0.0" >
+
+    <!-- versionCode is optional and Android only -->
+
+    <name>Madman</name>
+
+    <description>
+        An example for phonegap build docs. 
+    </description>
+
+    <author href="http://madman.id" email="madzae@yahoo.com">
+        Hardeep Shoker 
+    </author>
+
   <preference name="DisallowOverscroll" value="true"/>
   <preference name="android-minSdkVersion" value="14"/>
   <plugin name="cordova-plugin-battery-status" source="npm" spec="~1.1.1"/>
