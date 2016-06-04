@@ -10,11 +10,11 @@
     <name>Madman</name>
 
     <description>
-        An example for phonegap build docs. 
+        The Newstainment portal for connected generation
     </description>
 
     <author href="http://madman.id" email="madzae@yahoo.com">
-        Hardeep Shoker 
+        Ahmad Z
     </author>
 
   <preference name="DisallowOverscroll" value="true"/>
