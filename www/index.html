@@ -44,10 +44,8 @@
     <link rel="stylesheet" href="css/layout.css">
     <link rel="stylesheet" type="text/css" href="css/default.css" />
     <link rel="stylesheet" type="text/css" href="css/component.css" />
-    <link rel="stylesheet" type="text/css" href="css/RubberBand.css" />
     <script src="js/modernizr.custom.js"></script>
     <script type="text/javascript" src="js/jquery-1.12.3.js"></script>
-    <script type="text/javascript" src="js/RubberBand.js"></script>
     <script>
 $(function() {
 	var data_table = "";
@@ -72,13 +70,6 @@ $(function() {
 			<a href="shop.html">SHOP</a>
 			<a href="tentang.html">ABOUT</a>
 		</nav>
-
-<div id="RubberBandjs">
-	<div class="rband">
-		<img src="img/down-arrow.png" class="arrow" />
-		<img src="img/loading.gif" class="load" />
-		<h3 class="text"></h3>
-	</div>
 </div>
 
 		<header id="header">
@@ -111,16 +102,6 @@ $(function() {
 			};
 		</script>
 
-    <script>
-	var RB = new RubberBand(function(e) {
-
-		// make your call to AJAX or simply reload the page
-		location.reload();
-
-		// don't forget to close RubberBand when you're done.
-		e.close();
-	});
-    </script>
 
     <script type="text/javascript" src="cordova.js"></script>
     <script type="text/javascript" src="js/index.js"></script>
