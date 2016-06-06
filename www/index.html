@@ -44,9 +44,11 @@
     <link rel="stylesheet" href="css/layout.css">
     <link rel="stylesheet" type="text/css" href="css/default.css" />
     <link rel="stylesheet" type="text/css" href="css/component.css" />
+    <link rel="stylesheet" type="text/css" href="css/RubberBand.css" />
     <script src="js/modernizr.custom.js"></script>
     <script type="text/javascript" src="js/jquery-1.12.3.js"></script>
-     <script>
+    <script type="text/javascript" src="js/RubberBand.js"></script>
+    <script>
 $(function() {
 	var data_table = "";
 	$.ajax({
@@ -60,8 +62,8 @@ $(function() {
 		}
 	});
 });
-      </script>
-    
+    </script>
+
 </head>
 <body class="cbp-spmenu-push">
 		<nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-left" id="cbp-spmenu-s1">
@@ -70,10 +72,17 @@ $(function() {
 			<a href="shop.html">SHOP</a>
 			<a href="tentang.html">ABOUT</a>
 		</nav>
-        
- 
+
+<div id="RubberBandjs">
+	<div class="rband">
+		<img src="img/down-arrow.png" class="arrow" />
+		<img src="img/loading.gif" class="load" />
+		<h3 class="text"></h3>
+	</div>
+</div>
+
 		<header id="header">
-       
+
 <table width="100%" border="0">
   <tbody>
     <tr>
@@ -82,13 +91,13 @@ $(function() {
     </tr>
   </tbody>
 </table>
-    
+
 		</header>
-		
+
 		<div class="container">
         <p></p>
-        <table border="0" id="tampil"></table>	
-            
+        <table border="0" id="tampil"></table>
+
 </div>
 		<script src="js/classie.js"></script>
 		<script>
@@ -101,8 +110,18 @@ $(function() {
 				disableOther( 'showLeft' );
 			};
 		</script>
-        
- 
+
+    <script>
+	var RB = new RubberBand(function(e) {
+
+		// make your call to AJAX or simply reload the page
+		location.reload();
+
+		// don't forget to close RubberBand when you're done.
+		e.close();
+	});
+    </script>
+
     <script type="text/javascript" src="cordova.js"></script>
     <script type="text/javascript" src="js/index.js"></script>
     <script type="text/javascript">
